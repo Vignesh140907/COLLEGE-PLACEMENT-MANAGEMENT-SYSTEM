@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0; url=http://localhost:8080/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opening College Placement Management System...</title>
+  <script>
+    window.location.replace("http://localhost:8080/");
+  </script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: #f8fafc;
+      color: #0f172a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 1.5rem;
+    }
+    .card {
+      background: #ffffff;
+      padding: 2.5rem;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+      text-align: center;
+      max-width: 460px;
+      width: 100%;
+      border: 1px solid #e2e8f0;
+    }
+    .spinner {
+      width: 44px;
+      height: 44px;
+      margin: 0 auto 1.25rem;
+      border: 4px solid #e0e7ff;
+      border-top-color: #4f46e5;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      color: #64748b;
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+    .btn {
+      display: inline-block;
+      width: 100%;
+      padding: 0.75rem 1.25rem;
+      background: #4f46e5;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: background 0.2s;
+    }
+    .btn:hover {
+      background: #4338ca;
+    }
+    .notice {
+      margin-top: 1.5rem;
+      padding: 0.85rem;
+      background: #f1f5f9;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      color: #475569;
+      line-height: 1.4;
+      text-align: left;
+    }
+    .notice strong {
+      color: #1e293b;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="spinner"></div>
+    <h2>Connecting to PlacementHub</h2>
+    <p>Redirecting you to the College Placement Management System...</p>
+    <a href="http://localhost:8080/" class="btn">Click Here to Open Website</a>
+    <div class="notice">
+      💡 <strong>Tip:</strong> If the web page does not open, make sure the backend server is running by double-clicking <strong><code>run.bat</code></strong> in this folder.
+    </div>
+  </div>
+</body>
+</html>
